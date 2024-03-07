@@ -1,18 +1,28 @@
 import { render, screen } from '@testing-library/react'
+import { defaultTheme } from '../../styles/theme'
+import { ThemeProvider } from 'styled-components'
 
 import Main from '.'
 
 describe('<Main />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Main />)
+    const { container } = render(
+      <ThemeProvider theme={defaultTheme}>
+        <Main />
+      </ThemeProvider>
+    )
     expect(screen.getByRole('heading', { name: /Header/i })).toBeInTheDocument()
     expect(container.firstChild).toMatchSnapshot()
   })
   it('should render the colors correctly', () => {
-    // renderiza o component
-    const { container } = render(<Main />)
+    const { container } = render(
+      <ThemeProvider theme={defaultTheme}>
+        <Main />
+      </ThemeProvider>
+    )
 
-    // verifica se o background-color está correto
-    expect(container.firstChild).toHaveStyle({ 'background-color': '#000' })
+    expect(container.firstChild).toHaveStyle({
+      'background-color': defaultTheme.palette.contrastSecondary
+    })
   })
 })
