@@ -62,5 +62,16 @@ exports[`<Main /> should render the heading 1`] = `
   <p>
     Regular text
   </p>
+  <img
+    alt="Circle"
+    data-nimg="1"
+    decoding="async"
+    height="640"
+    loading="lazy"
+    src="/_next/image?url=%2Fassets%2Fcircle.png&w=1920&q=75"
+    srcset="/_next/image?url=%2Fassets%2Fcircle.png&w=640&q=75 1x, /_next/image?url=%2Fassets%2Fcircle.png&w=1920&q=75 2x"
+    style="color: transparent;"
+    width="640"
+  />
 </main>
 `;
