@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.main`
-  background-color: ${(props) => props.theme.palette.contrastSecondary};
+  background-color: ${(props) => props.theme.palette.light};
   width: 100%;
   height: 100%;
   padding: 3rem;
@@ -16,7 +16,7 @@ export const Wrapper = styled.main`
   h1,
   h2,
   p {
-    color: ${(props) => props.theme.palette.font};
+    color: ${(props) => props.theme.palette.darkest};
   }
 
   h1 {

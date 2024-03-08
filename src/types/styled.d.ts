@@ -17,10 +17,10 @@ declare module 'styled-components' {
     palette: {
       primary: string
       primaryLight: string
-      font: string
-      fontLight: string
-      contrastMain: string
-      contrastSecondary: string
+      darkest: string
+      dark: string
+      white: string
+      light: string
     }
     fonts: {
       h1: IFont

@@ -22,7 +22,7 @@ describe('<Main />', () => {
     )
 
     expect(container.firstChild).toHaveStyle({
-      'background-color': defaultTheme.palette.contrastSecondary
+      'background-color': defaultTheme.palette.light
     })
   })
 })

@@ -7,10 +7,10 @@ export const defaultTheme: DefaultTheme = {
   palette: {
     primary: '#e7806b',
     primaryLight: '#ffac9b',
-    font: '#1d1c1e',
-    fontLight: '#333136',
-    contrastMain: '#fff',
-    contrastSecondary: '#f3f5f6'
+    darkest: '#1d1c1e',
+    dark: '#333136',
+    white: '#fff',
+    light: '#f3f5f6'
   },
   fonts: {
     h1: {
